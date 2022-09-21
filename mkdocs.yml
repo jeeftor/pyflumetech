@@ -1,0 +1,30 @@
+site_name: pyflumetech
+repo_url: https://github.com/jeeftor/pyflumetech
+site_url: https://jeeftor.github.io/pyflumetech
+site_description: API For Flume
+site_author: Jeff Stein
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+            setup_commands:
+                - import sys
+                - sys.path.append('../')
+copyright: Maintained by Jeff Stein.
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    primary: white
+    accent: blue
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
